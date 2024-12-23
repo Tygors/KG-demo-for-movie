@@ -1,6 +1,3 @@
-# what's new in 2024?
-修改了Dockerfile，直接利用官方的python:3.6构建镜像！少了很多从ubuntu16.04+python3.6开始构建会踩的坑。
-
 # 上手教程
 如果对相关概念不是很了解，建议可以先看看该代码配套的[知乎专栏](https://zhuanlan.zhihu.com/knowledgegraph)系列文章。
 
@@ -36,7 +33,7 @@ docker run -p 80:80
 
 第一步：安装依赖库
 ```shell script
-pip3.6 install -r requirements.txt -i https://mirrors.aliyun.com/pypi/simple
+pip3.6 install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
 ```
 
 第二步：将nt格式的三元组数据以tdb进行存储（怎么得到kg_demo_movie.nt文件请参考[实践篇二](https://mp.weixin.qq.com/s/3sYSv4-BPU3wDyZWCzeUMg)）。
@@ -104,4 +101,13 @@ fuseki server配置文件，指定推理引擎，本体文件路径，规则文�
 
 ## streamlit_app.py
 web demo文件，基于streamlit库。
+
+# 兴趣群
+
+我创建了微信群，给大家提供一个交流的渠道。由于各种原因，我可能无法及时回答大家的问题；同时，个人的力量是渺小的，我对各位遇到的问题也不一定都了解，因此希望大家通过这个群能解决自己遇到的问题。群主题不局限于KG，也包括NLP的一些话题。公众号也会提供一些相关的资源和学习材料。
+
+公众号：尘世美小茶馆（simmer_teahouse）
+
+![image](./image/wechat.jpg)
+
 
